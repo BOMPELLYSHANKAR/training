@@ -1,0 +1,26 @@
+types of functions:
+1.named function:
+--function which have a name to declare and invoke the function
+2.anonymus function
+--the funtion which does'nt have a name for declaring
+--anonymus functions cannot be executed independently
+
+3.function expression
+--function declared as the value to a variable and invoked with the help of variable name
+4.IMMEDIATELY INVOKED FUNCTION expression
+--AS NAME SUGGESTS IT WILL INVOKED ONLY AFTER IMMEDIATE CREATION OF FUNCTION
+--IT WILL BE EXECUTED ONLY ONCE
+5.ARROW FUNCTION
+---it is used to concise the syntax of function
+syntax:- ()=>{};
+--it is similar to anonymus function
+note:current version of javascript is es 14
+es--ECMA script
+ECMA--european computer manufacturing association
+//return statement
+--it will return either expression r variables for future use
+implicit return : returns without any keywords
+expliit keyword: returns with statement
+note:return statement will not be used for printing any stuff it is only used with returning
+to print them we need to store it in a variable and print it
+note 2:it should be used at the end of function no ode will be executed after return statement
