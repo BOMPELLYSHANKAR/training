@@ -24,3 +24,31 @@ expliit keyword: returns with statement
 note:return statement will not be used for printing any stuff it is only used with returning
 to print them we need to store it in a variable and print it
 note 2:it should be used at the end of function no ode will be executed after return statement
+6.**higher order funtion**
+---higher order funtion is a funtion which accepts another function as value/argument to its parameter
+7.**call back function
+closure:-- closure is a memory created when functions bundled together by giving accesssibility to inner most function  to access variables of outer most function
+methodz of json:
+1.JSON.stringify():it will convert javascript object to json object
+2.JSON.parse():it will convert from json to javascript object
+**web storages**:
+it can store data in browser
+-upto 10mb of data can be stored
+1.local storage:permanent data storage
+    --it can store 10mb
+    1.localStorage.setItem("key","value")
+    2.localStorage.getItem("key")
+    3.localStorage.clear()
+2.session storage:temporary storage
+        --it can store 5mb of data
+NOTE:
+--javascript is a synchronous(single threaded language)
+methods of dom:
+1.document.getElementById("")
+--used to target html element by id attribute
+--with id attribute we can select only one element
+2.document.getElementByClassName("")
+3.document.getElementByTagName("")
+4.document.getElementByName("")
+5.document.querySelector("#id")
+6.document.querySelectorAll(".class")
