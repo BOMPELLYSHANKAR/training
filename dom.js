@@ -35,3 +35,13 @@
 // btn.addEventListener("click",()=>{
 //     console.log("button clicked")
 // })
+//!
+let bgColor=document.querySelectorAll(".bgColor");
+[...bgColor].map((element)=>{
+    element.addEventListener("mouseover",()=>{
+        element.style.backgroundColor=element.innerText;
+    })
+    element.addEventListener("mouseleave",()=>{
+        element.style.backgroundColor="transparent";
+    })
+});
