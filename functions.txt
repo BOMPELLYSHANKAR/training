@@ -52,3 +52,7 @@ methods of dom:
 4.document.getElementByName("")
 5.document.querySelector("#id")
 6.document.querySelectorAll(".class")
+modules:
+*********
+task:take array of objects which contains each object contains empid,empname,empcompany,empsalary and empaddress,where empaddress is again an object which contains empcity,emparea.
+print all those value on the ui in the form of table

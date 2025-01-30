@@ -1,113 +1,131 @@
-// let x = document.createElement("h1");
-// x.innerText = "Dynamic creation of html element from JS";
-// // x.id ="demo"
-// x.setAttribute("id" , "demo");
-// console.log(x);
+// // let x = document.createElement("h1");
+// // x.innerText = "Dynamic creation of html element from JS";
+// // // x.id ="demo"
+// // x.setAttribute("id" , "demo");
+// // console.log(x);
+// // document.body.appendChild(x);
+// // let image = document.createElement("img");
+// // image.src = "./3606208.jpg";
+// // console.log(image);
+// // document.body.appendChild(image);
 
-// document.body.appendChild(x);
+// // let form = document.querySelector("form");
+// // let name = document.getElementById("uName");
+// // let mail = document.getElementById("uEmail");
+// // let psw = document.getElementById("uPsw");
 
-// let image = document.createElement("img");
-// image.src = "./3606208.jpg";
-// console.log(image);
+// // form.addEventListener("submit",(event)=>{
+// //     event.preventDefault();
+// //     // console.log(event);
+// //     // console.log("form submitted");
+// //     // console.log(name.value);
 
-// document.body.appendChild(image);
+// //     let username = name.value;
+// //     let email = mail.value;
+// //     let password = psw.value;
+// //     let userDetails={
+// //         username:username,
+// //         email:email,
+// //         password:password
+// //     }
+// //     console.log(userDetails);
+// //     localStorage.setItem("userData" , JSON.stringify(userDetails))
+// // })
+
+// // localStorage.clear()
 
 
-// let form = document.querySelector("form");
-// let name = document.getElementById("uName");
-// let mail = document.getElementById("uEmail");
-// let psw = document.getElementById("uPsw");
+// // ! dynamic elements
 
-// form.addEventListener("submit",(event)=>{
-//     event.preventDefault();
-//     // console.log(event);
-//     // console.log("form submitted");
-//     // console.log(name.value);
+// // let mainEle = document.createElement("div");
+// // mainEle.setAttribute("class" , "mainBlock");
+// // console.log(mainEle);
 
-//     let username = name.value;
-//     let email = mail.value;
-//     let password = psw.value;
-//     let userDetails={
-//         username:username,
-//         email:email,
-//         password:password
+// // let topEle = document.createElement("div");
+// // topEle.setAttribute("class" , "topBlock");
+// // // console.log(topEle);
+
+// // let image = document.createElement("img");
+// // image.src="https://cdn.pixabay.com/photo/2025/01/14/13/55/nature-9332892_640.jpg";
+// // image.width="300"
+// // image.height="300"
+
+
+// // let bottomEle = document.createElement("div");
+// // bottomEle.setAttribute("class" , "bottomBlock");
+// // // console.log(bottomEle);
+// // let h1 = document.createElement("h1");
+// // h1.innerText="Heading";
+
+// // let btn = document.createElement("button");
+// // btn.innerText="View More";
+
+// // bottomEle.appendChild(h1);
+// // bottomEle.appendChild(btn);
+// // topEle.appendChild(image)
+// // mainEle.appendChild(topEle);
+// // mainEle.appendChild(bottomEle);
+// // document.body.appendChild(mainEle);
+
+
+// let form=document.querySelector("form");
+// let username = document.getElementById("uName");
+
+// let password = document.getElementById("uPass");
+// let check=document.getElementById("check");
+// let show=document.getElementById("show");
+
+// let gen = document.getElementsByName("gender");
+// // console.log(gen);
+// check.addEventListener("click",event=>{
+//     if(event.target.checked==true){
+//         password.setAttribute("type","text");
+//         show.innerText="hide password";
 //     }
-//     console.log(userDetails);
-//     localStorage.setItem("userData" , JSON.stringify(userDetails))
+//     else{
+//         password.setAttribute("type","password");
+//         show.innerText="show password";
+//     }
 // })
-
-// localStorage.clear()
-
-
-// ! dynamic elements
-
-// let mainEle = document.createElement("div");
-// mainEle.setAttribute("class" , "mainBlock");
-// console.log(mainEle);
-
-// let topEle = document.createElement("div");
-// topEle.setAttribute("class" , "topBlock");
-// // console.log(topEle);
-
-// let image = document.createElement("img");
-// image.src="https://cdn.pixabay.com/photo/2025/01/14/13/55/nature-9332892_640.jpg";
-// image.width="300"
-// image.height="300"
-
-
-// let bottomEle = document.createElement("div");
-// bottomEle.setAttribute("class" , "bottomBlock");
-// // console.log(bottomEle);
-// let h1 = document.createElement("h1");
-// h1.innerText="Heading";
-
-// let btn = document.createElement("button");
-// btn.innerText="View More";
-
-// bottomEle.appendChild(h1);
-// bottomEle.appendChild(btn);
-// topEle.appendChild(image)
-// mainEle.appendChild(topEle);
-// mainEle.appendChild(bottomEle);
-// document.body.appendChild(mainEle);
-
-
-let form=document.querySelector("form");
-let username = document.getElementById("uName");
-
-let password = document.getElementById("uPass");
-let check=document.getElementById("check");
-let show=document.getElementById("show");
-
-let gen = document.getElementsByName("gender");
-// console.log(gen);
-check.addEventListener("click",event=>{
-    if(event.target.checked==true){
-        password.setAttribute("type","text");
-        show.innerText="hide password";
-    }
-    else{
-        password.setAttribute("type","password");
-        show.innerText="show password";
-    }
-})
-form.addEventListener("submit",event=>{
-    event.preventDefault();
-    let un = username.value;
-    let up = password.value;
-    // console.log(un , up);
-    let gender = "";
+// form.addEventListener("submit",event=>{
+//     event.preventDefault();
+//     let un = username.value;
+//     let up = password.value;
+//     // console.log(un , up);
+//     let gender = "";
    
-   for(let i=0;i<=gen.length-1;i++){
-    if(gen[i].checked == true){
-        // console.log("true" , gen[i].value);
-        gender += gen[i].value;
+//    for(let i=0;i<=gen.length-1;i++){
+//     if(gen[i].checked == true){
+//         // console.log("true" , gen[i].value);
+//         gender += gen[i].value;
+//     }
+//    }
+// //    console.log(ele);
+// let userDetails={
+//     un,up,gender
+// };
+// console.log(userDetails);
+// })
+let emp=[{
+    empid:123,
+    empname:"shankar",
+    empcompany:"abcd",
+    empsalary:20000,
+    empaddress: {
+        emparea: "xyz",
+        empcity: "hyderabad"
     }
-   }
-//    console.log(ele);
-let userDetails={
-    un,up,gender
-};
-console.log(userDetails);
-})
+    },
+    {
+        empid:256,
+        empname:"sairam",
+        empcomay:"efg",
+        empsalary:300000,
+        empaddress:{
+            emparea:"cdde",
+            empcity:"bangalore"
+        }
+    }
+]
+let x=[...emp];
 
